@@ -8,9 +8,366 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/eae2f2fff1.js" crossorigin="anonymous"></script>
+
     <title>Emergency Hotline</title>
 </head>
-<body>
-    <h1>hey</h1>
+<body class="font-hind bg-green-50">
+    <header>
+        <div class="navbar bg-base-100 p-8">
+            <div class="logo">
+                <figure class="size-[50px]">
+                    <img src="./assets/logo.png" alt="logo.png">
+                </figure>
+            </div>
+            <div class="flex-1 ml-[24px] cursor-pointer">
+                <p class=" text-3xl text-left font-bold text-green-700">Emergency <br> Service</p>
+            </div>
+            <div class="flex gap-5">
+                <button class="flex justify-center items-center px-[35px] py-[14px] w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
+                    <p>
+                        0
+                    </p>
+                    <img class="ml-[10px] size-[30px]" src="./assets/heart.png" alt="heart.png">
+                </button>
+                
+                <button class="flex justify-center items-center px-[35px] py-[14px] w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
+                    <p>
+                        100
+                    </p>
+                    <img class="ml-[10px] size-[30px]" src="./assets/coin.png" alt="coin.png">
+                </button>
+
+                <button class="flex justify-center items-center px-[35px] py-[14px] w-fit font-bold text-2xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
+                    <p class="font-normal text-white">
+                        0 copy
+                    </p>
+                </button>
+            </div>
+        </div>
+
+        <section class="text-center bg-[radial-gradient(circle,_#006747,_#013223)] text-white py-10">
+            <img class="mx-auto size-[155px]" src="./assets/logo-dark.png" alt="">
+            <p class="font-bold text-5xl my-7">Emergency Service Directory</p>
+            <p class="text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+    </header>
+    <main class="">
+        <section class="w-11/12 mx-auto my-12 grid grid-cols-12 gap-7">
+            <section class="col-span-10">
+                <div class="grid grid-cols-3 gap-5">
+
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card w-fit p-8 shadow-sm bg-white">
+                        <div class="flex justify-between items-center">
+    
+                            <figure class="size-[80px] bg-red-300 rounded-lg">
+                                <img class="h-[70%]" src="./assets/emergency.png" alt="emergency.png">
+                            </figure>
+        
+                            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                        </div>
+                        <div>
+    
+                            <h1 class="font-bold text-3xl mt-7">National Emergency Number</h1>
+                            <p>National Emergency</p>
+                            <h1 class="font-bold text-5xl mt-9">999</h1>
+    
+                            <div class="w-[80px] px-5 py-3 my-4 text-center rounded-3xl bg-gray-200">
+                                <p class="">All</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex gap-2">
+    
+                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <aside class="bg-yellow-200 col-span-2">
+                <h1>hey</h1>
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
