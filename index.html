@@ -21,7 +21,7 @@
 
     <title>Emergency Hotline</title>
 </head>
-<body class="font-hind bg-green-50">
+<body class="font-hind bg-green-50 pb-3">
     <header>
         <div class="navbar flex justify-between bg-base-100 p-4 lg:p-8">
             <div class="logo">
@@ -34,14 +34,14 @@
             </div>
             <div class="flex gap-5">
                 <button class="flex justify-center items-center px-[35px] py-[14px] w-fit lg:w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
-                    <p>
+                    <p id="heart-count">
                         0
                     </p>
                     <img class="ml-[10px] size-[30px]" src="./assets/heart.png" alt="heart.png">
                 </button>
                 
                 <button class="flex justify-center items-center px-[35px] py-[14px] w-fit lg:w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
-                    <p>
+                    <p id="coins">
                         100
                     </p>
                     <img class="ml-[10px] size-[30px]" src="./assets/coin.png" alt="coin.png">
@@ -49,7 +49,7 @@
 
                 <button class="hidden lg:flex justify-center items-center px-[35px] py-[14px] w-fit font-bold text-2xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
                     <p class="font-normal text-white">
-                        0 copy
+                        <span id="copy-count">0</span> copy
                     </p>
                 </button>
             </div>
@@ -82,8 +82,8 @@
             </ul>
         </div>
 
-
         <section class="lg:w-11/12 mx-auto my-12 lg:grid grid-cols-12 gap-1">
+            <!-- cards -->
             <section class="col-span-9">
                 <div class="w-fit mx-auto grid lg:grid-cols-3 gap-5">
 
@@ -98,7 +98,7 @@
                         </div>
                         <div>
     
-                            <h1 class="font-bold text-2xl mt-7">National Emergency Number</h1>
+                            <h1 class="font-bold text-xl mt-7">National Emergency Number</h1>
                             <p>National Emergency</p>
                             <h1 class="font-bold text-3xl mt-9">999</h1>
     
@@ -110,13 +110,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                                <p >Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('National Emergency Number', '999')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -143,13 +143,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('Police Helpline Number', 999)">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -176,13 +176,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('Fire Service Number', '999')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -209,13 +209,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('Ambulance Service', '1994-999999')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -242,13 +242,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('Women & Child Helpline', '109')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -275,13 +275,13 @@
                         </div>
                         <div class="flex gap-2">
     
-                            <button class="btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
+                            <button class="copy btn border border-gray-500 rounded-lg bg-white py-5 w-[50%] hover:bg-gray-300">
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </button>
-                            <button class="btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800">
-                                <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                            <button class=" btn text-white rounded-lg bg-green-600 py-5 w-[50%] hover:bg-green-800" onclick="makeCall('Anti-Corruption Helpline', '106')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>Call</p>
                             </button>
                         </div>
                     </div>
@@ -290,6 +290,8 @@
 
 
             </section>
+
+            <!-- call history -->
             <aside class="hidden lg:block bg-white col-span-3">
                 <div class="flex justify-between p-5">
 
@@ -299,7 +301,7 @@
                     </div>
                     <div>
 
-                        <button class="px-[25px] py-[14px] w-fit font-bold text-xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
+                        <button class="px-[25px] py-[14px] w-fit font-bold text-xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800" onclick="clearHistory()">
                             <p class="font-normal text-white">
                                 clear
                             </p>
@@ -307,8 +309,8 @@
                         </button>
                     </div>
                 </div>
-                <ul class="p-4">
-                    <li class="flex justify-between items-center bg-gray-100 p-3 rounded-md">
+                <ul class="history p-4" >
+                    <li class="flex justify-between items-center bg-gray-100 p-3 rounded-md mb-2">
                         <div>
                             
                             <h1 class="font-bold">National Emergency Number</h1>
@@ -325,5 +327,7 @@
             </aside>
         </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
