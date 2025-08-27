@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- fav icon -->
+     <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
+
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/eae2f2fff1.js" crossorigin="anonymous"></script>
 
@@ -20,31 +23,31 @@
 </head>
 <body class="font-hind bg-green-50">
     <header>
-        <div class="navbar bg-base-100 p-8">
+        <div class="navbar flex justify-between bg-base-100 p-4 lg:p-8">
             <div class="logo">
-                <figure class="size-[50px]">
+                <figure class="hidden lg:block size-[50px]">
                     <img src="./assets/logo.png" alt="logo.png">
                 </figure>
             </div>
-            <div class="flex-1 ml-[24px] cursor-pointer">
-                <p class=" text-3xl text-left font-bold text-green-700">Emergency <br> Service</p>
+            <div class="flex-1 lg:ml-[24px] cursor-pointer">
+                <p class="text-xl lg:text-3xl text-left font-bold text-green-700">Emergency <br> Service</p>
             </div>
             <div class="flex gap-5">
-                <button class="flex justify-center items-center px-[35px] py-[14px] w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
+                <button class="flex justify-center items-center px-[35px] py-[14px] w-fit lg:w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
                     <p>
                         0
                     </p>
                     <img class="ml-[10px] size-[30px]" src="./assets/heart.png" alt="heart.png">
                 </button>
                 
-                <button class="flex justify-center items-center px-[35px] py-[14px] w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
+                <button class="flex justify-center items-center px-[35px] py-[14px] w-fit lg:w-[150px] font-bold text-2xl rounded-3xl bg-green-100 cursor-pointer hover:bg-green-50">
                     <p>
                         100
                     </p>
                     <img class="ml-[10px] size-[30px]" src="./assets/coin.png" alt="coin.png">
                 </button>
 
-                <button class="flex justify-center items-center px-[35px] py-[14px] w-fit font-bold text-2xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
+                <button class="hidden lg:flex justify-center items-center px-[35px] py-[14px] w-fit font-bold text-2xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
                     <p class="font-normal text-white">
                         0 copy
                     </p>
@@ -54,16 +57,37 @@
 
         <section class="text-center bg-[radial-gradient(circle,_#006747,_#013223)] text-white py-10">
             <img class="mx-auto size-[155px]" src="./assets/logo-dark.png" alt="">
-            <p class="font-bold text-5xl my-7">Emergency Service Directory</p>
-            <p class="text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <p class="font-bold text-2xl lg:text-5xl my-7">Emergency Service Directory</p>
+            <p class="text-[14px] lg:text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
     </header>
     <main class="">
-        <section class="w-11/12 mx-auto my-12 grid grid-cols-12 gap-7">
-            <section class="col-span-10">
-                <div class="grid grid-cols-3 gap-5">
 
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+        <!-- call history mobile -->
+         <div class="lg:hidden fixed z-3 right-[-70%] bottom-[10%] dropdown dropdown-top dropdown-center">
+            <div tabindex="0" role="button" class="btn m-1 rounded-full bg-green-500">
+                <i class="fa-solid fa-phone text-white"></i>
+                
+            </div>
+            <ul tabindex="0" class="dropdown-content menu bg-green-100 rounded-box flex flex-col gap-3 z-1 w-fit p-2 shadow-sm">
+                <p class="font-bold">History</p>
+                <li class="bg-white shadow-sm rounded-md font-bold">
+                    <p>
+                    National Emergency
+                    </p>
+                    
+                </li>
+                <li class="bg-white shadow-sm rounded-md font-bold"><a>Item 2</a></li>
+                
+            </ul>
+        </div>
+
+
+        <section class="lg:w-11/12 mx-auto my-12 lg:grid grid-cols-12 gap-1">
+            <section class="col-span-9">
+                <div class="w-fit mx-auto grid lg:grid-cols-3 gap-5">
+
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-red-300 rounded-lg">
@@ -96,7 +120,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-blue-300 rounded-lg">
@@ -129,7 +153,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-red-300 rounded-lg">
@@ -162,7 +186,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-red-300 rounded-lg">
@@ -195,7 +219,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-red-300 rounded-lg">
@@ -228,7 +252,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card w-[400px] p-8 shadow-sm bg-white">
+                    <div class="card w-[350px] p-8 shadow-sm bg-white">
                         <div class="flex justify-between items-center">
     
                             <figure class="size-[80px] bg-red-300 rounded-lg">
@@ -266,8 +290,38 @@
 
 
             </section>
-            <aside class="bg-yellow-200 col-span-2">
-                <h1>hey</h1>
+            <aside class="hidden lg:block bg-white col-span-3">
+                <div class="flex justify-between p-5">
+
+                    <div class="flex items-center gap-2 text-xl">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="font-bold">Call History</p>
+                    </div>
+                    <div>
+
+                        <button class="px-[25px] py-[14px] w-fit font-bold text-xl rounded-3xl bg-green-600 cursor-pointer hover:bg-green-800">
+                            <p class="font-normal text-white">
+                                clear
+                            </p>
+                            
+                        </button>
+                    </div>
+                </div>
+                <ul class="p-4">
+                    <li class="flex justify-between items-center bg-gray-100 p-3 rounded-md">
+                        <div>
+                            
+                            <h1 class="font-bold">National Emergency Number</h1>
+                            <p>999</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">
+                                11:36:58 PM
+                            </p>
+                        </div>
+
+                    </li>
+                </ul>
             </aside>
         </section>
     </main>
