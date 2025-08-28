@@ -5,7 +5,7 @@ function addCount(id){
 }
 
 
-// fav count 
+// favourite count 
 const hearts = document.querySelectorAll(".fa-heart");
 
 hearts.forEach(heart => {
@@ -14,23 +14,23 @@ hearts.forEach(heart => {
 })
 
 
-// copy count 
+// copy funtionality
 
-const copyBtns = document.querySelectorAll(".copy");
+function copyText(hotline) {
+    navigator.clipboard.writeText(hotline);
+    addCount("copy-count");
 
-copyBtns.forEach(copyBtn => {
-    copyBtn.addEventListener("click", function() {
-        addCount('copy-count')
-    })
-
-})
+    alert(`copied ${hotline}`);
 
 
-// call funtionality
+}
 
 const callHistory = document.querySelector('.history');
 
-
+function localTime(){
+    let time = new Date();
+    return time.toLocaleTimeString();
+}
 
 function makeCall(serviceName, number) {
     let coins = +document.getElementById("coins").innerText;
@@ -41,16 +41,17 @@ function makeCall(serviceName, number) {
 
         callLog.classList.add("flex", "justify-between", "items-center", "bg-gray-100", "p-3", "rounded-md", "mb-2");
 
-        callLog.innerHTML = `<div><h1 class="font-bold">${serviceName}</h1><p>${number}</p></div><div><p class="font-semibold">time</p></div>`;
+        callLog.innerHTML = `<div><h1 class="font-bold">${serviceName}</h1><p>${number}</p></div><div><p class="font-semibold">${localTime()}</p></div>`;
 
 
         callHistory.appendChild(callLog);
 
         document.getElementById("coins").innerText = coins - 20;
+        
 
 
     } else {
-        alert("You don't have enough coins.")
+        alert("❌ You don't have enough coins.")
     }
 }
 
